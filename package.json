@@ -1,0 +1,67 @@
+{
+  "name": "rl-dev-snippets",
+  "displayName": "RL dev snippets",
+  "description": "code snippets",
+  "publisher": "BenRussell-Vick",
+  "version": "0.1.83",
+  "engines": {
+    "vscode": "^1.87.0"
+  },
+  "icon": "icons/deepsource.svg",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/material-extensions/vscode-material-icon-theme/blob/main"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "rl-dev-snippets",
+        "title": "test"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "html",
+        "path": "./snippets/snippets.json"
+      }
+    ],
+    "snippets-css": [
+      {
+        "language": "css",
+        "path": "./snippets/snippets-css.json"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test",
+    "publish": "vsce publish"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "@types/vscode": "^1.87.0",
+    "@vscode/test-cli": "^0.0.8",
+    "@vscode/test-electron": "^2.3.9",
+    "eslint": "^8.57.0",
+    "typescript": "^5.3.3"
+  },
+  "__metadata": {
+    "id": "c9a12a6b-6429-4113-9aad-0ee8a8583876",
+    "publisherId": "8b609080-166a-438a-bee6-38890e210537",
+    "publisherDisplayName": "Ben Russell-Vick",
+    "targetPlatform": "undefined",
+    "updated": false,
+    "isPreReleaseVersion": false,
+    "hasPreReleaseVersion": false,
+    "installedTimestamp": 1715099598896,
+    "pinned": false,
+    "source": "gallery"
+  }
+}
